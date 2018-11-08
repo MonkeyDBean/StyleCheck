@@ -42,11 +42,13 @@
             <property name="message"
              value="Consider using special escape sequence instead of octal value or Unicode escaped value."/>
         </module>
-        <module name="AvoidEscapedUnicodeCharacters">
+	    
+       <!-- 检测使用unicode, 检测中文名时会报错，暂时去掉 -->
+       <!-- <module name="AvoidEscapedUnicodeCharacters">
             <property name="allowEscapesForControlCharacters" value="true"/>
             <property name="allowByTailComment" value="true"/>
             <property name="allowNonPrintableEscapes" value="true"/>
-        </module>
+        </module> -->
 		
 	<!-- 单行代码不能超过120字符：http://checkstyle.sourceforge.net/config_sizes.html#LineLength -->
         <module name="LineLength">
