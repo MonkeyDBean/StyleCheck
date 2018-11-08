@@ -50,9 +50,9 @@
             <property name="allowNonPrintableEscapes" value="true"/>
         </module> -->
 		
-	<!-- 单行代码不能超过120字符：http://checkstyle.sourceforge.net/config_sizes.html#LineLength -->
+	<!-- 单行代码不能超过120, 改为220字符 ：http://checkstyle.sourceforge.net/config_sizes.html#LineLength -->
         <module name="LineLength">
-            <property name="max" value="120"/>
+            <property name="max" value="220"/>
             <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
 
