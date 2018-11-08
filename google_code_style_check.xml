@@ -48,7 +48,7 @@
             <property name="allowNonPrintableEscapes" value="true"/>
         </module>
 		
-		<!-- 单行代码不能超过120字符：http://checkstyle.sourceforge.net/config_sizes.html#LineLength -->
+	<!-- 单行代码不能超过120字符：http://checkstyle.sourceforge.net/config_sizes.html#LineLength -->
         <module name="LineLength">
             <property name="max" value="120"/>
             <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
@@ -70,7 +70,7 @@
                     INSTANCE_INIT"/>
         </module>
 		
-		<!-- if/while等关键字后要加空格, else如果和前面的}写在一行，中间也要留空格: http://checkstyle.sourceforge.net/config_whitespace.html#WhitespaceAround -->
+	<!-- if/while等关键字后要加空格, else如果和前面的}写在一行，中间也要留空格: http://checkstyle.sourceforge.net/config_whitespace.html#WhitespaceAround -->
         <module name="WhitespaceAround">
             <property name="allowEmptyConstructors" value="true"/>
             <property name="allowEmptyMethods" value="true"/>
@@ -87,11 +87,11 @@
         <module name="MissingSwitchDefault"/>
         <module name="FallThrough"/>
 		
-		<!-- 当声明long型常量时，使用大写的L，因为小写的l看起来像1: http://checkstyle.sourceforge.net/config_misc.html#UpperEll -->
+	<!-- 当声明long型常量时，使用大写的L，因为小写的l看起来像1: http://checkstyle.sourceforge.net/config_misc.html#UpperEll -->
         <module name="UpperEll"/>
         <module name="ModifierOrder"/>
 		
-		<!-- 变量声明与方法声明之间需要有空行: http://checkstyle.sourceforge.net/config_whitespace.html#EmptyLineSeparator -->
+	<!-- 变量声明与方法声明之间需要有空行: http://checkstyle.sourceforge.net/config_whitespace.html#EmptyLineSeparator -->
         <module name="EmptyLineSeparator">
             <property name="allowNoEmptyLineBetweenFields" value="true"/>
         </module>
@@ -128,27 +128,27 @@
              value="Package name ''{0}'' must match pattern ''{1}''."/>
         </module>
 		
-		<!-- 大写字母打头，只能包括大小写字母及数字，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#TypeName -->
+	<!-- 大写字母打头，只能包括大小写字母及数字，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#TypeName -->
         <module name="TypeName">
             <message key="name.invalidPattern"
              value="Type name ''{0}'' must match pattern ''{1}''."/>
         </module>
 		
-		<!-- 函数命名规范，小写字母打头，连续的小写和大写字母以及数字，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#MemberName -->
+	<!-- 函数命名规范，小写字母打头，连续的小写和大写字母以及数字，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#MemberName -->
         <module name="MemberName">
             <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9]*$"/>
             <message key="name.invalidPattern"
              value="Member name ''{0}'' must match pattern ''{1}''."/>
         </module>
 		
-		<!-- 参数命名规范，与函数命名规范相同，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#ParameterName -->
+	<!-- 参数命名规范，与函数命名规范相同，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#ParameterName -->
         <module name="ParameterName">
             <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
             <message key="name.invalidPattern"
              value="Parameter name ''{0}'' must match pattern ''{1}''."/>
         </module>
 		
-		<!-- lambda表达式里的变量命名规范，与普通变量命名规范相同，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#LambdaParameterName -->
+	<!-- lambda表达式里的变量命名规范，与普通变量命名规范相同，不允许有下划线: http://checkstyle.sourceforge.net/config_naming.html#LambdaParameterName -->
         <module name="LambdaParameterName">
             <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
             <message key="name.invalidPattern"
@@ -160,7 +160,7 @@
              value="Catch parameter name ''{0}'' must match pattern ''{1}''."/>
         </module>
 		
-		<!-- 变量命名规范，与函数命名规范相同，不允许有下划线：http://checkstyle.sourceforge.net/config_naming.html#LocalVariableName -->
+	<!-- 变量命名规范，与函数命名规范相同，不允许有下划线：http://checkstyle.sourceforge.net/config_naming.html#LocalVariableName -->
         <module name="LocalVariableName">
             <property name="tokens" value="VARIABLE_DEF"/>
             <property name="format" value="^[a-z]([a-z0-9][a-zA-Z0-9]*)?$"/>
@@ -184,7 +184,7 @@
         </module>
         <module name="NoFinalizer"/>
 		
-		<!-- 模板参数符号 <> 前后不应该有空格: http://checkstyle.sourceforge.net/config_whitespace.html#GenericWhitespace -->
+	<!-- 模板参数符号 <> 前后不应该有空格: http://checkstyle.sourceforge.net/config_whitespace.html#GenericWhitespace -->
         <module name="GenericWhitespace">
             <message key="ws.followed"
              value="GenericWhitespace ''{0}'' is followed by whitespace."/>
@@ -202,15 +202,16 @@
         </module>
         <module name="OverloadMethodsDeclarationOrder"/>
 		
-		<!-- 变量的声明与初次使用隔的太远:http://checkstyle.sourceforge.net/config_coding.html#VariableDeclarationUsageDistance -->
+	<!-- 变量的声明与初次使用隔的太远:http://checkstyle.sourceforge.net/config_coding.html#VariableDeclarationUsageDistance -->
         <module name="VariableDeclarationUsageDistance"/>
 		
-		<!-- 同一类别下的引用声明需要按字典序排序: http://checkstyle.sourceforge.net/config_imports.html#CustomImportOrder -->
-        <module name="CustomImportOrder">
+	<!-- 暂不使用，与idea默认Reformat 规则冲突 -->
+	<!-- 同一类别下的引用声明需要按字典序排序: http://checkstyle.sourceforge.net/config_imports.html#CustomImportOrder -->
+   <!-- <module name="CustomImportOrder">
             <property name="sortImportsInGroupAlphabetically" value="true"/>
             <property name="separateLineBetweenGroups" value="true"/>
             <property name="customImportOrderRules" value="STATIC###THIRD_PARTY_PACKAGE"/>
-        </module>
+        </module> -->
         <module name="MethodParamPad"/>
         <module name="NoWhitespaceBefore">
             <property name="tokens"
@@ -218,7 +219,7 @@
             <property name="allowLineBreaks" value="true"/>
         </module>
 		
-		<!-- ( 后面不应该有空格: http://checkstyle.sourceforge.net/config_whitespace.html#ParenPad -->
+	<!-- ( 后面不应该有空格: http://checkstyle.sourceforge.net/config_whitespace.html#ParenPad -->
         <module name="ParenPad"/>
         <module name="OperatorWrap">
             <property name="option" value="NL"/>
@@ -255,7 +256,7 @@
             <property name="exceptionVariableName" value="expected"/>
         </module>
 		
-		<!-- 注释应与前面的代码行保持相同的缩进: http://checkstyle.sourceforge.net/config_misc.html#CommentsIndentation -->
+	<!-- 注释应与前面的代码行保持相同的缩进: http://checkstyle.sourceforge.net/config_misc.html#CommentsIndentation -->
         <module name="CommentsIndentation"/>
     </module>
 </module>
